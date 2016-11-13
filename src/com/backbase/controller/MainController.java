@@ -49,12 +49,12 @@ public class MainController {
     /**
      * Create a new player
      *
-     * @param view
+     * @param iKalah
      * @param playerMsg
      * @return
      */
-    public static Player createPlayer(IKalah view, String playerMsg) {
-        String playerName = view.getAnswer(String.format(KalahConstants.PLAYER_ENTRY, playerMsg));
+    public static Player createPlayer(IKalah iKalah, String playerMsg) {
+        String playerName = iKalah.getAnswer(String.format(KalahConstants.PLAYER_ENTRY, playerMsg));
         Player player = new Player();
         player.setName(playerName);
         return player;
