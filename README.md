@@ -3,3 +3,5 @@ Testing the service
 -------------------
 
 We need to use the command line for testing.
+
+java MainController
